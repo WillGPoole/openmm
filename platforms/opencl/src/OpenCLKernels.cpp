@@ -286,6 +286,7 @@ void OpenCLCalcNonbondedForceKernel::initialize(const System& system, const Nonb
         if (epsilon != 0.0)
             hasLJ = true;
     }
+
     for (int i = 0; i < force.getNumParticleParameterOffsets(); i++) {
         string param;
         int particle;
